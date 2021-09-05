@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.rad-card {
+    background-color: rgba(8, 9, 126, 0.4);
+    /* z-index: 327; */
+    border-radius: 0 25px 0 25px;
+    /* 边框 0,6,255 */
+    box-shadow: rgb(0, 6, 255) 0px 0px 20px inset;
+    height: 100%;
+}
+
+
+.panelcontainer {
+    border: 1px solid rgb(2, 36, 108);
+    box-shadow: rgb(0, 6, 255, 0.5) 0px 0px 30px inset;
+    position: relative;
+}
+
+.panelcontainer .horn {
+    border-bottom: 3px solid #00d3e7;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 0
+}
+
+.panelcontainer .lb {
+    left: 0;
+    border-left: 3px solid #00d3e7;
+}
+
+.panelcontainer .rb {
+    right: 0;
+    border-right: 3px solid #00d3e7;
+}
+
+.paneltitlebg {
+    height: 44px;
+    background-image: linear-gradient(to right,
+            rgb(8, 37, 183, 0.5),
+            rgb(1, 180, 255, 0.1));
+}
+
+.paneltitle {
+    font-size: 24px;
+    font-family: "Microsoft YaHei";
+    font-weight: bolder;
+    line-height: 44px;
+    text-align: center;
+    background-image: -webkit-linear-gradient(right, #0072ff, #00eaff, #01aaff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    float: left;
+    margin-left: 30px;
+
+}
+.titlebox{
+    background-image: url('../components/datav/img/biaotikuang.png');
+    background-size:100% 100%;
+    font-family: "Microsoft YaHei";
+    text-align: center;
+    font-size:14px;
+    color:#00eaff;
+    font-weight: 400;
+    height: 37px;
+        line-height: 37px;
+}
+.notching-border {
+
+    clip-path: polygon(0px 0, calc(100% - 6px) 0,
+            /*左下*/
+
+            100% 6px, 100% calc(100% - 6px),
+
+            calc(100% - 0px) 100%, 6px 100%,
+            /*右上*/
+
+            0 calc(100% - 6px), 0 0px);
+
+    background: linear-gradient(-45deg, #289eef 0px, transparent 0) bottom right,
+
+        linear-gradient(45deg, #289eef 4px, transparent 0) bottom left,
+
+        linear-gradient(135deg, #289eef 0px, transparent 0) top left,
+
+        linear-gradient(-135deg, #289eef 4px, transparent 0) top right;
+
+/*    
+    box-shadow: rgb(0, 6, 255) 0px 0px 31px inset; */
+    border: solid 2px #289eef;
+
+
+
+}
+.notching {
+    font-family: "Microsoft YaHei";
+    text-align: center;
+    font-size:14px;
+    color:#00eaff;
+    font-weight: 400;
+ 
+    /* -webkit-text-fill-color: transparent; */
+  
+
+
+    clip-path: polygon(0px 0, calc(100% - 6px) 0,
+            /*左下*/
+
+            100% 6px, 100% calc(100% - 6px),
+
+            calc(100% - 0px) 100%, 6px 100%,
+            /*右上*/
+
+            0 calc(100% - 6px), 0 0px);
+/* 
+    background: linear-gradient(-45deg, #289eef 0px, transparent 15px) bottom right,
+
+        linear-gradient(45deg, #289eef 4px, transparent  15px) bottom left,
+
+        linear-gradient(135deg, #289eef 0px, transparent 0) top left,
+
+        linear-gradient(-135deg, #289eef 4px, transparent 0) top right; */
+        
+        background: linear-gradient(-45deg,transparent 0px,rgba(3, 51, 147, 0.452) 0) bottom right,
+                    linear-gradient(45deg,transparent 3px,rgba(3, 51, 147, 0.452) 0) bottom left,
+                    linear-gradient(135deg,transparent 0px,rgba(3, 51, 147, 0.452) 0) top left,
+                    linear-gradient(-135deg,transparent 4px,rgba(3, 51, 147, 0.452) 0) top right;
+        background-size: 50% 50%;
+        background-repeat: no-repeat;
+        
+
+   
+      
+    /* border: solid 2px #289eef; */
+
+
+
+}
+.oaccounter{
+    background-image: url('../components/datav/img/shuzikuang.png');
+    width:1.0375rem;
+    height:1.2625rem;
+    background-position: 50% 0;
+}
+.oaccounter p{
+    font-size: 0.875rem;
+    font-weight: bold;
+    line-height: 1.2625rem;
+    vertical-align: middle;
+
+    background-image: -webkit-linear-gradient(bottom, #FFFFFF, #EFD886 , #AF8521,#ECCC7E,#ECCC7E );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #AE6D19;
+}
